@@ -15,7 +15,7 @@ const Contact = () => {
             <main className="flex w-full flex-col items-center justify-center bg-light text-dark dark:bg-dark dark:text-light min-h-screen">
                 <Layout className="pt-0 md:pt-16 sm:pt-8">
                     <AnimatedText 
-                        text="Let's Connect!" 
+                        text="Let&apos;s Connect!" 
                         className="mb-16 text-8xl lg:text-7xl sm:text-6xl xs:text-4xl sm:mb-8 text-center" 
                     />
                     <div className="flex items-center justify-between w-full lg:flex-col">
@@ -65,7 +65,7 @@ const Contact = () => {
                                         className="placeholder:text-dark dark:placeholder:text-light text-dark dark:text-light bg-light dark:bg-dark border border-dark dark:border-light p-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light w-full h-40 resize-none transition-shadow duration-300 ease-in-out"
                                     />
                                     <button className="text-bold placeholder:text-dark dark:placeholder:text-light w-1/2 bg-dark text-light dark:bg-light dark:text-dark rounded-full font-semibold p-4 mt-4 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                                        Let's Talk
+                                        Let&apos;s Talk
                                     </button>
                                     {success && (
                                         <motion.span 
