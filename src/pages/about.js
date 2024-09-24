@@ -58,7 +58,7 @@ I believe that technology should go beyond just solving problems; it should also
 </p>
 
 <p className='font-medium'>
-Whether I&lsquo;mcreating an AI model or integrating new advancements, I infuse every project with my dedication to excellence and creativity. I eagerly anticipate the opportunity to apply my skills and passion for AI in your next project!
+Whether I&lsquo;m creating an AI model or integrating new advancements, I infuse every project with my dedication to excellence and creativity. I eagerly anticipate the opportunity to apply my skills and passion for AI in your next project!
 </p>
 
                 </div>
