@@ -50,21 +50,15 @@ const about = () => {
                     <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 '>Biography</h2>
                     <p className='font-medium'>
-                    Hi, I&lsquo;m CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
-new and innovative ways to bring my clients&lsquo; visions to life.
+                    Hi, I&lsquo;m Hariesh R., an AI enthusiast specializing in deep learning, dedicated to transforming research into practical solutions that address real-world challenges. With a foundation in full-stack development, I aim to create intelligent applications that not only enhance user experiences but also meet the needs of diverse audiences.
             </p>
             
 <p className='my-4 font-medium'>
-I believe that design is about more than just making things look pretty – it&lsquo;s about solving problems and 
-creating intuitive, enjoyable experiences for users.
+I believe that technology should go beyond just solving problems; it should also be user-friendly and enjoyable. My passion lies in developing AI models that leverage deep learning techniques to drive innovation and provide impactful solutions. I continuously explore new technologies to stay at the forefront of this rapidly evolving field.
 </p>
 
 <p className='font-medium'>
-Whether I&lsquo;m working on a website, mobile app, or 
-other digital product, I bring my commitment to design excellence and user-centered thinking to 
-every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
-
+Whether I&lsquo;mcreating an AI model or integrating new advancements, I infuse every project with my dedication to excellence and creativity. I eagerly anticipate the opportunity to apply my skills and passion for AI in your next project!
 </p>
 
                 </div>
