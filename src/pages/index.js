@@ -31,11 +31,11 @@ export default function Home() {
             />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left
+              <AnimatedText text="Building Digital Experiences with Precision and Passion" className='!text-6xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl 
               '/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              As a future-focused AI and ML developer, I am passionate about transforming innovative ideas into effective solutions that resonate with users. Check out my portfolio to see my journey and projects.
               </p>
               <div className='flex  items-center self-start mt-2 lg:self-center'>
                 <Link href='Hariesh_Resume.pdf' target={"_blank"}
