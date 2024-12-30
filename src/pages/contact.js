@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Add icons for phone, email, and address
 import TransitionEffect from '@/components/TransitionEffect';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
@@ -24,21 +24,20 @@ const Contact = () => {
                             {/* Contact Information Section */}
                             <div className="flex-1 rounded-2xl border-2 border-dark dark:border-light bg-light dark:bg-dark p-8 shadow-lg flex flex-col justify-between min-h-[400px]">
                                 <div>
-                                    
                                     <p className="text-left text-lg text-gray-700 dark:text-gray-300 mb-8">
-                                        Every great journey begins with a simple connection. Feel free to reach out and let&apos;s explore ideas, collaborate on projects, or discuss opportunities. Together, we can turn concepts into reality and challenges into achievements. Let&apos; connect and make something extraordinary happen!
+                                        Every great journey begins with a simple connection. Feel free to reach out and let&apos;s explore ideas, collaborate on projects, or discuss opportunities. Together, we can turn concepts into reality and challenges into achievements. Let&apos;s connect and make something extraordinary happen!
                                     </p>
                                     <ul className="space-y-4 text-left">
                                         <li className="flex items-center gap-4">
-                                            <div className="w-8 h-8 bg-gray-300 rounded-full dark:bg-gray-600"></div>
+                                            <FaPhoneAlt className="w-8 h-8 text-dark dark:text-light" /> {/* Phone Icon */}
                                             <span className="text-lg text-dark dark:text-light">+91 7806844832</span>
                                         </li>
                                         <li className="flex items-center gap-4">
-                                            <div className="w-8 h-8 bg-gray-300 rounded-full dark:bg-gray-600"></div>
+                                            <FaMapMarkerAlt className="w-8 h-8 text-dark dark:text-light" /> {/* Address Icon */}
                                             <span className="text-lg text-dark dark:text-light">Perunduai, Madurai</span>
                                         </li>
                                         <li className="flex items-center gap-4">
-                                            <div className="w-8 h-8 bg-gray-300 rounded-full dark:bg-gray-600"></div>
+                                            <FaEnvelope className="w-8 h-8 text-dark dark:text-light" /> {/* Email Icon */}
                                             <span className="text-lg text-dark dark:text-light">hariehkai@example.com</span>
                                         </li>
                                     </ul>

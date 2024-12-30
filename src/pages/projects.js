@@ -5,7 +5,11 @@ import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/Spotify_banner_1.jpg";
+import project2 from "../../public/images/projects/CKD.jpg";
+import project3 from "../../public/images/projects/Yoga_1.jpg";
+import project4 from "../../public/images/projects/Spotify_banner.jpg";
+
 import { motion } from "framer-motion";
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -129,7 +133,7 @@ const projects = () => {
             <div className='col-span-6 sm:col-span-12'>
               <Project
                 title="Forecasting the Risk of Chronic Kidney Disease"
-                img={project1}
+                img={project2}
                 summary="A predictive system leveraging GNN to estimate CKD progression with high accuracy."
                 link="/ckd-forecasting"
                 github="/ckd-forecasting-github"
@@ -139,7 +143,7 @@ const projects = () => {
             <div className='col-span-6 sm:col-span-12'>
               <Project
                 title="Yoga Pose Recognition and Correction"
-                img={project1}
+                img={project3}
                 summary="Real-time yoga pose detection and correction system powered by CNN-LSTM and MediaPipe."
                 link="/yoga-pose-project"
                 github="https://github.com/Hariesh-Kai/TeenGuard"
@@ -149,7 +153,7 @@ const projects = () => {
             <div className='col-span-12'>
               <FeaturedProject
                 title="Emotion-Based Music Recommender: YouTube"
-                img={project1}
+                img={project4}
                 summary="Utilizes TensorFlow for emotion detection and recommends YouTube music content tailored to user preferences."
                 linkV1="https://emotuner-v1.streamlit.app/"
                 linkV2="https://emotuner-v2.streamlit.app/"
