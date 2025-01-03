@@ -135,8 +135,8 @@ const projects = () => {
                 title="Forecasting the Risk of Chronic Kidney Disease"
                 img={project2}
                 summary="A predictive system leveraging GNN to estimate CKD progression with high accuracy."
-                link="/ckd-forecasting"
-                github="/ckd-forecasting-github"
+                link="https://github.com/Hariesh-Kai/YogaPoseClassifier"
+                github="https://github.com/Hariesh-Kai/YogaPoseClassifierb"
                 type="Research Project"
               />
             </div>
@@ -145,7 +145,7 @@ const projects = () => {
                 title="Yoga Pose Recognition and Correction"
                 img={project3}
                 summary="Real-time yoga pose detection and correction system powered by CNN-LSTM and MediaPipe."
-                link="/yoga-pose-project"
+                link="https://github.com/Hariesh-Kai/TeenGuard"
                 github="https://github.com/Hariesh-Kai/TeenGuard"
                 type="AI Application"
               />
