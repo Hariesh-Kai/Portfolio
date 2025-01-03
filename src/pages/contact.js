@@ -46,7 +46,7 @@ const Contact = () => {
                                     <h2 className="text-2xl font-bold mb-4">Follow Me</h2>
                                     <div className="flex space-x-6">
                                         <a
-                                            href="https://github.com/your-github"
+                                            href="https://github.com/Hariesh-Kai"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-3xl text-dark dark:text-light hover:text-primary dark:hover:text-primary transition-colors duration-300"
@@ -54,7 +54,7 @@ const Contact = () => {
                                             <FaGithub />
                                         </a>
                                         <a
-                                            href="https://linkedin.com/in/your-linkedin"
+                                            href="https://www.linkedin.com/in/hariesh-r/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-3xl text-dark dark:text-light hover:text-primary dark:hover:text-primary transition-colors duration-300"

@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Link from 'next/link'
 import Logo from './Logo'
-import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon } from './icons';
+import { TwitterIcon, GithubIcon, LinkedInIcon, InstagramIcon, SunIcon, MoonIcon } from './icons';
 import { useRouter } from 'next/router'
 import { motion } from "framer-motion"
 import useThemeSwitcher from './hooks/useThemeSwitcher'
@@ -81,21 +81,15 @@ const handleClick = () => {
             </nav>
             
             <nav className='flex items-center justify-center flex-wrap'>
-            <motion.a href="https://twitter.com" target='_blank'
+            
+            <motion.a href="https://github.com/Hariesh-Kai" target='_blank' 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mr-3"
             >
-                <TwitterIcon />
-            </motion.a>
-            <motion.a href="https://twitter.com" target='_blank' 
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 mx-3"
-            >
                 <GithubIcon />
             </motion.a>
-            <motion.a href="https://twitter.com" target='_blank'
+            <motion.a href="https://www.linkedin.com/in/hariesh-r/" target='_blank'
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3"
@@ -105,9 +99,17 @@ const handleClick = () => {
             <motion.a href="https://twitter.com" target='_blank'
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className="w-6 ml-3 bg-light rounded-full"
+                className="w-6 mx-3 bg-light rounded-full"
             >
-                <PinterestIcon />
+                <InstagramIcon />
+            </motion.a>
+            
+            
+            <motion.a href="https://twitter.com" target='_blank'
+                whileTap={{scale:0.9}}
+                className="w-6 ml-3"
+            >
+                <TwitterIcon />
             </motion.a>
             <button onClick={()=> setMode(mode === "light" ? "dark" : "light") }
             className="ml-3 flex items-center justify-center rounded-full p-1"    
@@ -146,27 +148,21 @@ const handleClick = () => {
             >
                 <TwitterIcon />
             </motion.a>
-            <motion.a href="https://twitter.com" target={'_blank'} 
+            <motion.a href="https://github.com/Hariesh-Kai" target={'_blank'} 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
             >
                 <GithubIcon />
             </motion.a>
-            <motion.a href="https://twitter.com" target={'_blank'}
+            <motion.a href="https://www.linkedin.com/in/hariesh-r/" target={'_blank'}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 sm:mx-1"
             >
                 <LinkedInIcon />
             </motion.a>
-            <motion.a href="https://twitter.com" target={'_blank'}
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                className="w-6 ml-3 bg-light rounded-full sm:mx-1"
-            >
-                <PinterestIcon />
-            </motion.a>
+
             <button onClick={()=> setMode(mode === "light" ? "dark" : "light") }
             className="ml-3 flex items-center justify-center rounded-full p-1"    
             >
