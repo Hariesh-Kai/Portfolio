@@ -4,10 +4,51 @@ import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, F
 import TransitionEffect from '@/components/TransitionEffect';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .send(
+                'service_harieshkai', // Your Service ID
+                'template_harieshkai', // Your Template ID
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message
+                },
+                'io3KD8yqbujoA3yua' // Your Public Key
+            )
+            .then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setSuccess(true);
+                    setError(false);
+                },
+                (err) => {
+                    console.log('FAILED...', err);
+                    setSuccess(false);
+                    setError(true);
+                }
+            );
+    };
 
     return (
         <>
@@ -83,31 +124,43 @@ const Contact = () => {
 
                             {/* Messenger Section */}
                             <div className="relative flex-1 rounded-2xl border-2 border-dark dark:border-light bg-gradient-to-tr from-light  to-light dark:from-dark dark:to-dark p-8 shadow-xl flex flex-col justify-between min-h-[400px]">
-                            {/* Decorative Shadow Background */}
-                            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light shadow-lg dark:shadow-xl" />
-                                <form className="flex flex-col gap-6 w-full font-bold">
+                                {/* Decorative Shadow Background */}
+                                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light shadow-lg dark:shadow-xl" />
+                                <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full font-bold">
                                     <div className="flex gap-6">
                                         <input 
                                             type="text" 
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
                                             placeholder="Name" 
                                             className="placeholder:text-dark dark:placeholder:text-light text-dark dark:text-light bg-light dark:bg-dark border border-dark dark:border-light p-4 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light w-full transition-shadow duration-300 ease-in-out"
                                         />
                                         <input 
-                                            type="text" 
+                                            type="email" 
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
                                             placeholder="Email" 
                                             className="placeholder:text-dark dark:placeholder:text-light text-dark dark:text-light bg-light dark:bg-dark border border-dark dark:border-light p-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light w-full transition-shadow duration-300 ease-in-out"
                                         />
                                     </div>
                                     <input 
                                         type="text" 
+                                        name="subject"
+                                        value={formData.subject}
+                                        onChange={handleChange}
                                         placeholder="Subject" 
                                         className="placeholder:text-dark dark:placeholder:text-light text-dark dark:text-light bg-light dark:bg-dark border border-dark dark:border-light p-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light w-full transition-shadow duration-300 ease-in-out"
                                     />
                                     <textarea 
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         placeholder="Message" 
                                         className="placeholder:text-dark dark:placeholder:text-light text-dark dark:text-light bg-light dark:bg-dark border border-dark dark:border-light p-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-light w-full h-40 resize-none transition-shadow duration-300 ease-in-out"
                                     />
-                                    <button className="text-bold placeholder:text-dark dark:placeholder:text-light w-1/2 bg-dark text-light dark:bg-light dark:text-dark rounded-full font-semibold p-4 mt-4 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out self-center">
+                                    <button type="submit" className="text-bold placeholder:text-dark dark:placeholder:text-light w-1/2 bg-dark text-light dark:bg-light dark:text-dark rounded-full font-semibold p-4 mt-4 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out self-center">
                                         Let&apos;s Talk
                                     </button>
                                     {success && (
