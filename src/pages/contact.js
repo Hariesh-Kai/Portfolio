@@ -75,7 +75,7 @@ const Contact = () => {
                                         </li>
                                         <li className="flex items-center gap-4">
                                             <FaMapMarkerAlt className="w-8 h-8 text-dark dark:text-light" /> {/* Address Icon */}
-                                            <span className="text-lg text-dark dark:text-light">Perunduai, Madurai</span>
+                                            <span className="text-lg text-dark dark:text-light">Perungudi, Madurai</span>
                                         </li>
                                         <li className="flex items-center gap-4">
                                             <FaEnvelope className="w-8 h-8 text-dark dark:text-light" /> {/* Email Icon */}
