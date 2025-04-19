@@ -121,6 +121,19 @@ const projects = () => {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-8 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
+                title="Context-Aware Multimodal Music Recommender"
+                img={project1}
+                summary="A Streamlit app that recommends music by analyzing user emotion, age, gender, and indoor scene using YOLOv8, CNNs, Whisper, Demucs, and LLMs like Phi-2 and RoBERTa with YouTube API integration."
+                linkV1="https://youtube-based-multimodal-music.streamlit.app/"
+                github="https://github.com/Hariesh-Kai/Youtube_Based_MultiModel_Prediction"
+                type="Featured Project"
+              />
+            </div>
+
+
+          <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-8 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+            <div className='col-span-12'>
+              <FeaturedProject
                 title="Emotion-Based Music Recommender: Spotify"
                 img={project1}
                 summary="A music recommendation app that detects user emotions and suggests songs and artists based on real-time mood analysis."
